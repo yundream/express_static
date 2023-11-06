@@ -6,7 +6,7 @@ const port = 8080
 
 app.use('/user/static', express.static('public'))
 
-app.get('/user', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(__dirname+"/webpage/index.html")
     logger.info({user_id: 'yundream', transaction_id: '1234567'}, "Homepage loaded")
 })
