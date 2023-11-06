@@ -1,6 +1,6 @@
-ecr=aws-account-id.dkr.ecr.ap-northeast-2.amazonaws.com/example/nodeapp
-imgname=example/nodeapp
-ver=0.4
+ecr=016355928008.dkr.ecr.ap-northeast-2.amazonaws.com/joinc/hello-world
+imgname=joinc/hello-world
+ver=0.1
 
 build:
 	docker build -t $(imgname):latest -t $(imgname):$(ver) .
